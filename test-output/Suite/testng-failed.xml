@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test thread-count="2" name="Test(failed)" parallel="methods">
+    <parameter name="password" value="Selenium@123"/>
+    <parameter name="logout" value="a[@class=&#039;rd_logout&#039;]"/>
+    <parameter name="rediffhome" value="//p[text() = &#039;You have successfully signed out of Rediffmail.&#039;]"/>
+    <parameter name="usernamebox" value="//input[@id=&#039;login1&#039; and @name=&#039;login&#039;]"/>
+    <parameter name="passwordbox" value="//input[@id=&#039;password&#039; and @name=&#039;passwd&#039;]"/>
+    <parameter name="signinbutton" value="//input[@name=&#039;proceed&#039; and @class=&#039;signinbtn&#039;]"/>
+    <parameter name="url" value="https://rediff.com"/>
+    <parameter name="signinlink" value="//a[@class=&#039;signin&#039;]"/>
+    <parameter name="username" value="seleniumpanda@rediffmail.com"/>
+    <classes>
+      <class name="testngxml_understanding.ParallelCode">
+        <methods>
+          <include name="rediffFlowFirefox"/>
+          <include name="rediffFlowChrome"/>
+        </methods>
+      </class> <!-- testngxml_understanding.ParallelCode -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

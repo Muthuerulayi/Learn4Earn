@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Suite">
+  <test thread-count="2" parallel="methods" name="Test">
+  <parameter name="url" value="https://rediff.com"></parameter>
+  <parameter name="signinlink" value="//a[@class='signin']"></parameter>
+  <parameter name="username" value="seleniumpanda@rediffmail.com"></parameter>
+  <parameter name="password" value="Selenium@123"></parameter>
+  <parameter name="signinbutton" value="//input[@name='proceed' and @class='signinbtn']"></parameter>
+  <parameter name="logout" value="a[@class='rd_logout']"></parameter>
+  <parameter name="rediffhome" value="//p[text() = 'You have successfully signed out of Rediffmail.']"></parameter>
+  <parameter name="usernamebox" value="//input[@id='login1' and @name='login']"></parameter>
+  <parameter name="passwordbox" value="//input[@id='password' and @name='passwd']"></parameter>
+    <classes>
+      <class name="testngxml_understanding.ParallelCode"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

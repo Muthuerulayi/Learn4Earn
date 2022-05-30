@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Suite-1">
+	<test name="Test Case-1">
+		<classes>
+			<class name="com.learn4earn.assignments.RediffValidationTestNGxml">
+				<methods>
+					<include name="initializeWebDriver" />
+					<include name="launchRediff" />
+					<include name="signIn" />
+					<include name="logOut" />
+					<include name="rediffHome" />
+					<include name="closeWebDriver" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
